@@ -1,0 +1,354 @@
+/* Version One. http://miolabs.me */
+/* Protected by Creative Commons ShareAlike License Version 1.0: http://creativecommons.org/licenses/sa/1.0 */
+/* All associated designs (c) Lisa Mio, miolabs.me */
+
+
+
+/* Global */
+
+@font: 'Roboto', sans-serif;
+@red: #c8616d;
+@green: #429e94;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: @green;
+  color: #fff;
+  font-size: 16px; /* Base text size */
+}
+
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1024px) {
+  /* No mobile */
+  #mobile {
+    display: none;
+  }
+
+  /* Pages */
+  .keyable {
+    width: 100%;
+    background: #eaeaea;
+    z-index: 1;
+    p {
+      color: #666;
+      font: 400 1em/200% @font;
+      padding: 0 0 .5em 0;
+    }
+    .center {
+      text-align: center;
+      padding-top: 1.5em;
+      img {
+        width: 48.5%;
+        height: 48.5%;
+        padding: .5em .35em 0 .35em;
+      }
+    }
+    .last {
+      text-align: center;
+      padding: 1.5em 5em 2.5em 5em;
+    }
+  }
+
+  h1 {
+    width: 30%;
+    position: relative;
+    top: 50px;
+    color: #666;
+    font: 900 3em/100% @font;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-bottom: 1px solid #bbb;
+    margin: 1em auto;
+    padding: 0 2em .5em 2em;
+  }
+
+  h2 {
+    color: #666;
+    font: 700 1.5em/150% @font;
+    span {
+      float: left;
+      background: #bc4350;
+      color: #fff;
+      margin: .3em .5em 0 0;
+      padding: .2em .5em;
+    }
+  }
+
+  h3 {
+    color: #bbb;
+    font: 400 1.15em/100% @font;
+    padding: 0 0 0 2.4em;
+  }
+
+  /* Buttons */
+  a.button {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    opacity: .6;
+    margin: 0 .5em;
+    padding: .5em 2em;
+  }
+
+  a.button:hover {
+    opacity: 1;
+    transition-duration: .5s;
+  }
+
+  a.clear {
+    background: transparent;
+    color: #999;
+    border: 2px solid #999;
+    opacity: 1;
+  }
+  a.clear:hover {
+    color: @red;
+    border-color: @red;
+  }
+  a.gray {
+    cursor: help;
+    background: #999;
+  }
+  a.gray:hover {
+    opacity: .6;
+  }
+  a.green {
+    background: @green;
+  }
+  a.red {
+    background: @red;
+  }
+
+  /* Sections */
+  #works {
+    .project {
+      position: relative;
+      border-bottom: 1px solid #ccc;
+      padding: 3em 5em;
+      .function {
+        width: 35em;
+        position: absolute;
+        top: 3.6em;
+        right: 5em;
+        text-align: right;
+        list-style: none;
+        li {
+          display: inline-block;
+          background: rgba(66, 169, 158, .4);
+          font: 400 .7em/150% @font;
+          border: 1px solid #fff;
+          border-radius: 8px;
+          margin-bottom: .2em;
+          padding: .1em .5em;
+        }
+      }
+      .detail {
+        width: 95%;
+        text-indent: 2em;
+        margin: 1.5em auto 0 auto;
+      }
+    }
+  }
+
+  #profile {
+    .center {
+      padding: 1.5em 5em 0 5em;
+      img {
+        padding: 0;
+      }
+    }
+  }
+
+  #contact p {
+    a {
+      color: @red;
+      font-weight: 700;
+      text-decoration: none;
+      opacity: .6;
+    }
+    a:hover {
+      opacity: 1;
+    }
+    a.button, a.button:hover {
+     color: #fff;
+    }
+  }
+
+  /* Navigation */
+  .main {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background: #fff url('img/logo.png') no-repeat 5em .5em;
+    background-size: 293.33px 30px;
+    font: 700 1em/100% @font;
+    z-index: 99;
+    ul {
+      list-style: none;
+      float: right;
+      margin-right: 1.5em;
+    }
+    li {
+      display: inline-block;
+      font-size: 0.85em;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 1.25em 1em 0 0;
+      a {
+        color: #222;
+        text-decoration: none;
+        padding: 1.15em 2.5em;
+      }
+      a:hover {
+        color: @red;
+        transition-duration: .5s;
+      }
+      a.on {
+        background: #eaeaea;
+        color: #666;
+      }
+    }
+    span {
+      background-color: #fff;
+      color: #aaa;
+      font-size: .85em;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      padding: 0 1.5px 0 3px;
+    }
+  }
+
+  .main.shadow {
+    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.25);
+  }
+
+  /* Tooltip */
+  aside {
+    width: 4em;
+    position: fixed;
+    top: 6em;
+    right: 0;
+    background: rgba(255, 255, 255, .2);
+    font: 400 .8em/150% @font;
+    border: 1px solid #fff;
+    border-right: 0;
+    border-radius: 3em 0 0 3em;
+    padding: 1em 1em 1em 1.5em;
+    z-index: 99;
+    a.tooltip {
+      color: #666;
+      text-decoration: none;
+      opacity: .4;
+      span {
+        display: none;
+        width: 8em;
+        margin: -4em 0 0 -13em;
+        padding: 1em 1.25em;
+        z-index: 99;
+      }
+    }
+    a.tooltip:hover {
+      cursor: help;
+      text-decoration: none;
+      opacity: .6;
+      span {
+        display: inline;
+        position: absolute;
+        background: rgba(255, 255, 255, .6);
+        color: #666;
+        border-radius: 1em;
+      }
+    }
+    .box {
+      display: inline;
+      width: 1em;
+      background: #fff;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      padding: 0 .5em .1em .5em;
+    }
+    .none {
+      margin: 0 .25em;
+      padding: 0 .25em;
+    }
+  }
+
+  /* Footer */
+  #totop {
+    position: fixed;
+    bottom: .85em;
+    right: .5em;
+    font: 900 3em/100% @font;
+    a {
+      background: #ccc;
+      color: #999;
+      border: 1px solid #fff;
+      border-radius: 1em;
+      padding: 0 .5em .25em .5em;
+      opacity: .3;
+    }
+    a:hover {
+      color: #fff;
+      opacity: .6;
+    }
+  }
+
+  footer {
+    color: #eaeaea;
+    font: 400 .7em/100% @font;
+    text-align: center;
+    padding: 2em 0;
+    z-index: 9;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 1em;
+      padding: 0 .5em;
+      opacity: .3;
+    }
+    img:hover {
+      opacity: .6;
+      transition-duration: .75s;
+    }
+    span {
+      display: block;
+      color: rgba(255, 255, 255, .5);
+    }
+  }
+}
+
+
+
+/* For Mobile */
+
+@media only screen and (max-width: 1023px) {
+  #mobile {
+    color: rgba(255,255,255,.8);
+    h4 {
+      width: 100%;
+      color: rgba(255,255,255,.5);
+      font: 700 1.75em/150% @font;
+      text-align: center;
+      margin-top: 12%;
+      padding: .5em 0;
+    }
+    p {
+      width: 75%;
+      font: 400 1em/200% @font;
+      margin: 1em auto;
+    }
+  }
+  section, nav, h1, p.center, aside, footer {
+    display: none;
+  }
+}
