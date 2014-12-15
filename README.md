@@ -16,6 +16,7 @@ miolabs
 <li>Filter by tags</li>
 <li>Language switcher</li>
 <li>Lightbox video</li>
+<li>Mobile version</li>
 <li>Page preloader (for slower access)</li>
 <li>Page transition (disable change in content size)</li>
 </ul>
