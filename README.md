@@ -22,10 +22,4 @@ miolabs
 <li>Contact form with CAPTCHA support</li>
 <li>Filter by tags</li>
 <li>Language switcher</li>
-<<<<<<< HEAD
-=======
-<li>Lightbox video</li>
-<li>Mobile version</li>
->>>>>>> FETCH_HEAD
-<li>Page preloader (for slower access)</li>
 </ul>
