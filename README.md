@@ -10,12 +10,17 @@ miolabs
 <li>Tested in latest versions of Chrome, Firefox, Safari and Opera</li>
 </ul>
 
+<h2>Version 1.1 (2014-12-16)</h2>
+<ul>
+<li>Content upgrade</li>
+<li>Lightbox support</li>
+<li>Smooth page transition</li>
+</ul>
+
 <h2>Future Additions</h2>
 <ul>
 <li>Contact form with CAPTCHA support</li>
 <li>Filter by tags</li>
 <li>Language switcher</li>
-<li>Lightbox video</li>
 <li>Page preloader (for slower access)</li>
-<li>Page transition (disable change in content size)</li>
 </ul>

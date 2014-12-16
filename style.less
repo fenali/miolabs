@@ -114,7 +114,6 @@ body {
     border-color: @red;
   }
   a.gray {
-    cursor: help;
     background: #999;
   }
   a.gray:hover {
@@ -283,6 +282,27 @@ body {
     }
   }
 
+  /* Lightbox */
+  .popbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.85);
+    text-align: center;
+    z-index: 999;
+    iframe {
+      margin-top: 5%;
+    }
+  }
+
+  .popbox:target {
+    outline: none;
+    display: block;
+  }
+
   /* Footer */
   #totop {
     position: fixed;
@@ -348,7 +368,7 @@ body {
       margin: 1em auto;
     }
   }
-  section, nav, h1, p.center, aside, footer {
+  section, nav, h1, p.center, .popbox, aside, footer {
     display: none;
   }
 }
