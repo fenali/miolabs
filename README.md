@@ -21,5 +21,6 @@ miolabs
 <ul>
 <li>Contact form with CAPTCHA support</li>
 <li>Filter by tags</li>
+<li>Image preloader</li>
 <li>Language switcher</li>
 </ul>
