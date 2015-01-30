@@ -12,15 +12,21 @@ miolabs
 
 <h2>Version 1.1 (2014-12-16)</h2>
 <ul>
-<li>Content upgrade</li>
+<li>Content update</li>
 <li>Lightbox support</li>
 <li>Smooth page transition</li>
+</ul>
+
+<h2>Version 1.2 (2015-01-30)</h2>
+<ul>
+<li>Content update</li>
+<li>CSS preloader</li>
+<li>Loadtime improvement</li>
 </ul>
 
 <h2>Future Additions</h2>
 <ul>
 <li>Contact form with CAPTCHA support</li>
-<li>Filter by tags</li>
-<li>Image preloader</li>
+<li>Content filter (e.g. by tag)</li>
 <li>Language switcher</li>
 </ul>

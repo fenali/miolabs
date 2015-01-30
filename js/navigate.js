@@ -1,7 +1,14 @@
+// Preloader
+$(document).ready(function() {
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 3000);
+});
+
 // Change header style after scroll
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll > 0) {
+    if (scroll > 50) {
         $(".main").addClass("shadow");
         $("#totop").css("display","block");
     }
@@ -10,8 +17,6 @@ $(window).scroll(function() {
         $("#totop").css("display","none");
     }
 });
-
-
 
 // Keyable: set keys
 $(document).ready(function() {
@@ -51,8 +56,6 @@ function showLink(array) {
         });
     });
 }
-
-
 
 // Smooth scroll: press up/down to jump by section
 function scrollToSection(anchor) {
