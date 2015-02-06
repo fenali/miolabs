@@ -66,10 +66,10 @@ var i = 1;
 $(document).keydown(function (event) {
     if (event.keyCode == 38) {
         i--;
-        scrollToSection($("#Sect"+i+""));
+        scrollToSection($("#Sect"+i));
     } else if (event.keyCode == 40) {
         i++;
         event.preventDefault();
-        scrollToSection($("#Sect"+i+""));
+        scrollToSection($("#Sect"+i));
     }
 });
